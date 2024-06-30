@@ -1,8 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
   getAuth,
-  createUserWithEmailAndPassword,
-  sendEmailVerification,
+  GoogleAuthProvider,
+  signInWithPopup,
   setPersistence,
   browserSessionPersistence,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       document.querySelector("#btn-signup").addEventListener("click", register);
+
+      document
+        .querySelector(".btn-google")
+        .addEventListener("click", googleSignUp);
 
       function register() {
         const name = document.querySelector("#signup-inp-name").value;
@@ -93,6 +97,30 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             alertContainer.style.backgroundColor = "rgb(255, 64, 64)";
             alertContainer.classList.add("active");
+          });
+      }
+
+      function googleSignUp() {
+        const provider = new GoogleAuthProvider();
+
+        signInWithPopup(auth, provider)
+          .then((result) => {
+            const user = result.user;
+            const userData = {
+              name: user.displayName,
+              email: user.email,
+              exploredApp: false,
+              isSignup: true,
+            };
+
+            set(ref(database, "users/" + user.uid), userData);
+
+            alert("Signed up successfully with Google.");
+            window.location.href = "./Dashboard.html";
+          })
+          .catch((error) => {
+            console.error("Error signing up with Google: ", error);
+            alert("Error signing up with Google: " + error.message);
           });
       }
     })
