@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/Root-Style.css" />
+    <link rel="stylesheet" href="./css/Header-Style.css" />
+
+    <link rel="stylesheet" href="./css/Main-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <div class="container">
+        <section class="login-cta-container">
+          <h1>Welcome to LSPU Clinic.</h1>
+          <h1>To Access and request medical records, Please:</h1>
+
+          <div class="cta-action">
+            <button class="btn-login">Sign in</button>
+            <h3>or</h3>
+            <button class="btn-sign-up">Sign up</button>
+          </div>
+        </section>
+
+        <section class="download-cta-container">
+          <h1>
+            To learn more about the monthly diseases, you can download out
+            mobile application named AR Health
+          </h1>
+          <a href="./logo.png" class="btn-download-app" download
+            >Download APP</a
+          >
+        </section>
+
+        <section class="disease-card-container">
+          <!-- <section class="disease-card">
+            <h1>January 2024</h1>
+
+            <div class="img-name-container">
+              <img src="./media/images/icons8-person-64.png" alt="img" />
+              <h1>Heart Disease</h1>
+            </div>
+
+            <div class="description-container">
+              <h1>Description</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+                earum debitis, voluptatibus pariatur recusandae, ex accusantium
+                voluptatem natus quasi mollitia nemo temporibus minus porro
+                culpa quo totam iure autem voluptas?
+              </p>
+            </div>
+
+            <div class="symptoms-container">
+              <h1>Symptoms</h1>
+              <li>asdasd</li>
+              <li>asdasd</li>
+              <li>asdasd</li>
+            </div>
+          </section> -->
+        </section>
+      </div>
+    </main>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./js/Header-Script.js"></script>
+    <script type="module" src="./js/Index-Script.js" defer></script>
+  </body>
+</html>

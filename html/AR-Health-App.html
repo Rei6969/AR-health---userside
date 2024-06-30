@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Header-Style.css" />
+
+    <link rel="stylesheet" href="./../css/AR-Health-App-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <button class="btn-back"></button>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".btn-back").addEventListener("click", () => {
+          window.location.href = "./Dashboard.html";
+        });
+      });
+    </script>
+
+    <script src="./../js/Header-Script.js" defer></script>
+  </body>
+</html>

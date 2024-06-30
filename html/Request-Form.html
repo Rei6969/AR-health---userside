@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Header-Style.css" />
+    <link rel="stylesheet" href="./../css/Request-Form-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+    <main>
+      <button class="btn-back"></button>
+
+      <div class="main-container">
+        <h1>Request Form</h1>
+
+        <div>
+          <label for="requestSelect">Select File for Request</label>
+
+          <select id="requestSelect">
+            <option value="">Please select a file for request</option>
+            <option value="Scheduling Medical Examination">
+              Scheduling Medical Examination
+            </option>
+            <option value="Physical Examination">Physical Examination</option>
+            <option value="Doctor Consultation/Dental">
+              Doctor Consultation/Dental
+            </option>
+            <option value="Medical Record">Medical Record</option>
+            <option value="Issuance of Medical Certification">
+              Issuance of Medical Certification
+            </option>
+            <option value="Borrowing First Aid Kit">
+              Borrowing First Aid Kit
+            </option>
+            <option value="others">Others</option>
+          </select>
+
+          <div class="others-container" style="display: none">
+            <label for="requestOthers">Others:</label>
+            <input
+              type="text"
+              id="requestOthers"
+              placeholder="Please specify the file"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-submit">Submit Request</button>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/Header-Script.js"></script>
+    <script src="./../js/Request-Form-Script.js" type="module" defer></script>
+  </body>
+</html>
