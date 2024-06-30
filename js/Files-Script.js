@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                   const btnDownload = document.createElement("button");
                   btnDownload.classList.add("btn-download");
-                  btnDownload.textContent = "Download";
+                  btnDownload.textContent = "Open File";
 
                   tdActions.appendChild(btnDownload);
 
@@ -86,45 +86,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
                   tBody.appendChild(tr);
 
-                  //   btnDownload.addEventListener("click", () => {
-                  //     const fileUrl = data.fileUrl;
-
-                  //     const link = document.createElement("a");
-                  //     link.href = fileUrl;
-                  //     link.setAttribute("download", `${data.fileName}`);
-                  //     link.setAttribute("target", "_blank"); // Open in a new tab if download attribute fails
-
-                  //     document.body.appendChild(link);
-                  //     link.click();
-                  //     document.body.removeChild(link);
-                  //   });
-
-                  btnDownload.addEventListener("click", async () => {
-                    const fileName = `Medical-Record-${data.name}`;
-                    const fileUrl = data.fileUrl;
-
-                    try {
-                      const response = await fetch(fileUrl);
-                      if (!response.ok)
-                        throw new Error("Network response was not ok");
-
-                      const blob = await response.blob();
-                      const url = window.URL.createObjectURL(blob);
+                    btnDownload.addEventListener("click", () => {
+                      const fileUrl = data.fileUrl;
 
                       const link = document.createElement("a");
-                      link.href = url;
-                      link.download = `${data.fileName}`;
+                      link.href = fileUrl;
+                      link.setAttribute("download", `${data.fileName}`);
+                      link.setAttribute("target", "_blank"); // Open in a new tab if download attribute fails
 
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
-
-                      window.URL.revokeObjectURL(url);
-                    } catch (error) {
-                      console.error("Fetch and download failed:", error);
-                      alert("Failed to download the file.");
-                    }
-                  });
+                    });
                 }
               }
             }
