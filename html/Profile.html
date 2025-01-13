@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Header-Style.css" />
+
+    <link rel="stylesheet" href="./../css/Profile-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <button class="btn-back" onclick="btnHandleBack()"></button>
+
+      <section class="profile-section">
+        <h2 class="profile-header">Edit Profile</h2>
+        <form class="profile-form" id="profile-form">
+          <input
+            type="text"
+            class="inp-field"
+            id="profile-inp-name"
+            placeholder="Enter your Full Name"
+            value=""
+            required
+          />
+          <input
+            type="email"
+            class="inp-field"
+            id="profile-inp-email"
+            placeholder="Enter your Email"
+            value=""
+            readonly
+            disabled
+          />
+          <select id="profile-sex" class="inp-field" required>
+            <option value="Male">Sex: Male</option>
+            <option value="Female">Sex: Female</option>
+          </select>
+          <input
+            type="password"
+            class="inp-field"
+            id="profile-inp-password"
+            placeholder="New Password"
+          />
+          <input
+            type="password"
+            class="inp-field"
+            id="profile-inp-cpassword"
+            placeholder="Confirm New Password"
+          />
+          <button
+            class="btn-save"
+            id="btn-save-profile"
+            form="profile-form"
+            type="submit"
+          >
+            Save Changes
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        btnHandleBack = () => {
+          window.location.href = "./Dashboard.html";
+        };
+      });
+
+      document.addEventListener("headerLoaded", () => {
+        const btnMenu = document.querySelector(".menu-toggle-container");
+
+        btnMenu.style.pointerEvents = "none";
+        btnMenu.style.opacity = 0;
+      });
+    </script>
+
+    <script src="./../js/Header-Script.js" defer></script>
+    <script type="module" src="./../js/Profile.js" defer></script>
+  </body>
+</html>

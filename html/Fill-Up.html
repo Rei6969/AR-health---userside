@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Header-Style.css" />
+
+    <link rel="stylesheet" href="./../css/Fill-Up-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <button class="btn-back"></button>
+
+      <div class="main-container">
+        <section class="task-container">
+          <div class="first-container task-column">
+            <span>
+              <h1>I</h1>
+            </span>
+          </div>
+
+          <div class="second-container task-column">
+            <span>
+              <h1>II</h1>
+            </span>
+          </div>
+
+          <div class="third-container task-column">
+            <span>
+              <h1>III</h1>
+            </span>
+          </div>
+
+          <div class="fourth-container task-column">
+            <span>
+              <h1>IV</h1>
+            </span>
+          </div>
+        </section>
+
+        <!-- FIRST FORM ================================================================================================================= -->
+        <form class="inp-container first-form input-forms">
+          <div class="inp-field">
+            <h2 style="margin-top: 0">PERSONAL INFORMATION</h2>
+
+            <div class="inp-content">
+              <p>Surname</p>
+              <input
+                type="text"
+                class="inp-surname"
+                placeholder="Enter Your Surname"
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Given Name</p>
+              <input
+                type="text"
+                class="inp-given-name"
+                placeholder="Enter Your Given Name"
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Middle Name</p>
+              <input
+                type="text"
+                class="inp-middle-name"
+                placeholder="Enter Your Middle Name"
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Age</p>
+              <input
+                type="number"
+                class="inp-age"
+                placeholder="Enter Your Age"
+                min="1"
+                max="100"
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Sex</p>
+              <select class="inp-sex" placeholder="Enter Your Sex" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+
+            <div class="inp-content">
+              <p>Status</p>
+              <select
+                class="inp-status"
+                placeholder="Enter Your Status"
+                required
+              >
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
+                <option value="Separated">Separated</option>
+                <option value="Live-in">Live-in</option>
+              </select>
+            </div>
+
+            <div class="inp-content">
+              <p>Date of Birth</p>
+              <input
+                type="date"
+                class="inp-birthdate"
+                placeholder="Enter Your Date of Birth"
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Course</p>
+              <select
+                class="inp-course"
+                placeholder="Enter Your Course"
+                required
+              >
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSIS">BSIS</option>
+                <option value="BSAE">BSAE</option>
+                <option value="BSA">BSA</option>
+                <option value="BSF">BSF</option>
+                <option value="BSABE">BSABE</option>
+                <option value="BSEd">BSEd</option>
+                <option value="BEEd">BEEd</option>
+                <option value="BSHM">BSHM</option>
+                <option value="BSBA">BSBA</option>
+                <option value="BSIE">BSIE</option>
+                <option value="BSCE">BSCE</option>
+              </select>
+            </div>
+
+            <div class="inp-content">
+              <p>School year entered (if applicable)</p>
+              <input
+                type="number"
+                class="inp-school-year"
+                placeholder="Enter Your School Year"
+                min="1983"
+                max="2025"
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Current Address</p>
+              <input
+                type="text"
+                class="inp-address"
+                placeholder="Enter Your Current Address"
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Tell/Cell No.</p>
+              <input
+                type="text"
+                class="inp-cell-no"
+                placeholder="Enter Your Tell/Cell No."
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Mother's name</p>
+              <input
+                type="text"
+                class="inp-mother-name"
+                placeholder="Enter Your Mother's name"
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Father's name</p>
+              <input
+                type="text"
+                class="inp-father-name"
+                placeholder="Enter Your Father's name"
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Guardian's name (if applicable)</p>
+              <input
+                type="text"
+                class="inp-guardian-name"
+                placeholder="Enter Your Guardian's name"
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Name of Contact Person in CASE OF EMERGENCY (REQUIRED)</p>
+              <input
+                type="text"
+                class="inp-contact-person"
+                placeholder="Enter Your Contact Person's name"
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Relationship</p>
+              <input
+                type="text"
+                class="inp-relationship"
+                placeholder="Enter Your Relationship"
+                required
+              />
+            </div>
+
+            <div class="inp-content">
+              <p>Contact no. (REQUIRED)</p>
+              <input
+                type="text"
+                class="inp-contact-no"
+                placeholder="Enter Your Contact no."
+                required
+              />
+            </div>
+          </div>
+          <div class="btn-container">
+            <div>
+              <!-- <button class="btn-previous">Previous</button> -->
+              <button class="btn-clear">Clear</button>
+            </div>
+            <button class="btn-next" type="submit">Next</button>
+          </div>
+        </form>
+        <!-- FIRST FORM END ================================================================================================================= -->
+
+        <!-- SECOND FORM ================================================================================================================= -->
+        <form class="inp-container second-form input-forms">
+          <div class="inp-field">
+            <h2 style="margin-top: 0">PAST MEDICAL AND DENTAL HISTORY</h2>
+            <h5>
+              INSTRUCTION: Please check all that apply and provide details.
+            </h5>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-known-illness"
+                />
+                <label for="checkbox-known-illness"
+                  >Previous/ present KNOWN illness</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-known-illness second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-hospitalizations"
+                />
+                <label for="checkbox-hospitalizations"
+                  >Past hospitalizations/ confinement</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-hospitalizations second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-allergies"
+                />
+                <label for="checkbox-allergies"
+                  >Known allergies to food or medicine</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-allergies second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-childhood-immunization"
+                />
+                <label for="checkbox-childhood-immunization"
+                  >Childhood immunization</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-childhood-immunization second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-present-immunization"
+                />
+                <label for="checkbox-present-immunization"
+                  >Present immunization</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-present-immunization second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-taking-medicine"
+                />
+                <label for="checkbox-taking-medicine"
+                  >Currently taking medicine/ vitamins</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-taking-medicine second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-dental-problems"
+                />
+                <label for="checkbox-dental-problems"
+                  >Dental problems (ex. Gingivitis, etc)</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-dental-problems second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="second-inp-checkbox"
+                  id="checkbox-physician"
+                />
+                <label for="checkbox-physician"
+                  >Primary care Physician (name, specialty, clinic location and
+                  date of last check-up/ follow-up):</label
+                >
+              </div>
+              <input
+                type="text"
+                class="inp-physician second-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div>
+              <button class="btn-previous">Previous</button>
+              <button class="btn-clear">Clear</button>
+            </div>
+            <button class="btn-next">Next</button>
+          </div>
+        </form>
+        <!-- SECOND FORM END ================================================================================================================= -->
+
+        <!-- THIRD FORM ================================================================================================================= -->
+        <form class="inp-container third-form input-forms">
+          <div class="inp-field">
+            <h2 style="margin-top: 0">FAMILY MEDICAL HISTORY</h2>
+            <h5>
+              INSTRUCTION: Please check all that apply and provide details.
+            </h5>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-allergy"
+                />
+                <label for="checkbox-allergy">Allergy</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-allergy third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-asthma"
+                />
+                <label for="checkbox-asthma">Asthma/ "hika"</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-asthma third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-tb"
+                />
+                <label for="checkbox-tb">Tuberculosis/ TB</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-tb third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-hypertension"
+                />
+                <label for="checkbox-hypertension"
+                  >Hypertension/ "high blood"</label
+                >
+              </div>
+              <input
+                type="text"
+                class="third-inp-hypertension third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-heart-disease"
+                />
+                <label for="checkbox-heart-disease"
+                  >Heart disease/ "sakit sa puso"</label
+                >
+              </div>
+              <input
+                type="text"
+                class="third-inp-heart-disease third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-stroke"
+                />
+                <label for="checkbox-stroke">Stroke</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-stroke third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-diabetes"
+                />
+                <label for="checkbox-diabetes">Diabetes</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-diabetes third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-cancer"
+                />
+                <label for="checkbox-cancer">Cancer</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-cancer third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-liver-disease"
+                />
+                <label for="checkbox-liver-disease">Liver disease</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-liver-disease third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-kidney-disease"
+                />
+                <label for="checkbox-kidney-disease"
+                  >Kidney or bladder disease</label
+                >
+              </div>
+              <input
+                type="text"
+                class="third-inp-kidney-disease third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-blood-disorder"
+                />
+                <label for="checkbox-blood-disorder">Blood disorder</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-blood-disorder third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-epilepsy"
+                />
+                <label for="checkbox-epilepsy">Epilepsy</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-epilepsy third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-mental-disorder"
+                />
+                <label for="checkbox-mental-disorder">Mental disorder</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-mental-disorder third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <div>
+                <input
+                  type="checkbox"
+                  class="third-inp-checkbox"
+                  id="checkbox-others"
+                />
+                <label for="checkbox-others">Others</label>
+              </div>
+              <input
+                type="text"
+                class="third-inp-others third-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div>
+              <button class="btn-previous">Previous</button>
+              <button class="btn-clear">Clear</button>
+            </div>
+            <button class="btn-next">Next</button>
+          </div>
+        </form>
+        <!-- THIRD FORM END ================================================================================================================= -->
+
+        <!-- FOURTH FORM ================================================================================================================= -->
+        <form class="inp-container fourth-form input-forms" id="last-form">
+          <div class="inp-field fourth-first-container">
+            <h2 style="margin-top: 0">PERSONAL AND SOCIAL HISTORY</h2>
+            <h5>
+              INSTRUCTION: Please check all that apply and provide details.
+            </h5>
+
+            <div class="inp-content">
+              <p>1. Alcohol intake:</p>
+
+              <div>
+                <input
+                  type="checkbox"
+                  class="fourth-inp-checkbox fourth-inp-yes"
+                  id="checkbox-yes-alcohol"
+                />
+                <label for="checkbox-yes-alcohol">Yes</label>
+              </div>
+
+              <input
+                type="text"
+                class="fourth-inp-yes-alcohol fourth-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+
+              <div>
+                <input
+                  type="checkbox"
+                  class="fourth-inp-checkbox fourth-inp-no no-input"
+                  id="checkbox-no-alcohol"
+                />
+                <label for="checkbox-no-alcohol">No</label>
+              </div>
+            </div>
+
+            <div class="inp-content">
+              <p>2. Tobacco use:</p>
+              <div>
+                <input
+                  type="checkbox"
+                  class="fourth-inp-checkbox fourth-inp-yes"
+                  id="checkbox-yes-tobacco"
+                />
+                <label for="checkbox-yes-tobacco">Yes</label>
+              </div>
+
+              <input
+                type="text"
+                class="fourth-inp-yes-tobacco fourth-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+
+              <div>
+                <input
+                  type="checkbox"
+                  class="fourth-inp-checkbox fourth-inp-no no-input"
+                  id="checkbox-no-tobacco"
+                />
+                <label for="checkbox-no-tobacco">No</label>
+              </div>
+            </div>
+
+            <div class="inp-content">
+              <p>3. Illicit drug use:</p>
+
+              <div>
+                <input
+                  type="checkbox"
+                  class="fourth-inp-checkbox fourth-inp-yes"
+                  id="checkbox-yes-drug"
+                />
+                <label for="checkbox-yes-drug">Yes</label>
+              </div>
+
+              <input
+                type="text"
+                class="fourth-inp-yes-drug fourth-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+
+              <div>
+                <input
+                  type="checkbox"
+                  class="fourth-inp-checkbox fourth-inp-no no-input"
+                  id="checkbox-no-drug"
+                />
+                <label for="checkbox-no-drug">No</label>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="inp-field fourth-second-container"
+            id="for-female-container"
+            style="display: none"
+          >
+            <h2>4. For FEMALES</h2>
+
+            <div class="inp-content">
+              <p class="content-p">a. Menstrual period</p>
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row"
+              >
+                <p>Date of first day of LAST menstrual period</p>
+                <input type="date" class="fourth-inp-menstrual-date" />
+              </div>
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-regular"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-first"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-regular">Regular</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="checkbox-irregular"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-second"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-irregular">Irregular</label>
+                </div>
+              </div>
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <label>Duration: </label>
+                <input
+                  type="number"
+                  class="fourth-inp-menstrual-duration"
+                  style="text-align: center"
+                />
+                <label>days/ weeks</label>
+              </div>
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <label>No. of pads/day: </label>
+                <input
+                  type="number"
+                  class="fourth-inp-menstrual-pads"
+                  style="text-align: center"
+                />
+              </div>
+            </div>
+
+            <div class="inp-content">
+              <p class="content-p">b. History of dysmenorrhea</p>
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-dysmenorrhea-yes"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-first fourth-inp-yes"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-dysmenorrhea-yes">Yes</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="checkbox-dysmenorrhea-no"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-second"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-dysmenorrhea-no">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="inp-content">
+              <p class="content-p">
+                c. If YES, how severe is your dysmenorrhea?
+              </p>
+
+              <div
+                class="inp-content dysmenorrhea-disable"
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  pointer-events: none;
+                  opacity: 0.5;
+                "
+              >
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-mild"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-first"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-mild">Mild</label>
+                </div>
+
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-moderate"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-second"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-moderate">Moderate</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="checkbox-severe"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-third"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-severe">Severe</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="inp-content" style="flex-direction: row">
+              <p class="content-p">
+                d. Date of last check-up with an OB-gynecologist
+              </p>
+              <input type="date" class="fourth-inp-check-up" />
+            </div>
+
+            <div class="inp-content">
+              <p class="content-p">
+                e. History of excessive/ abnormal bleeding?
+              </p>
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-yes-bleeding"
+                    class="fourth-inp-checkbox with-input fourth-inp-checkbox-first"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-yes-bleeding">Yes</label>
+                </div>
+
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-no-bleeding"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-second"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-no-bleeding">No</label>
+                </div>
+              </div>
+
+              <input
+                type="text"
+                class="fourth-inp-yes-bleeding fourth-inp"
+                placeholder="Please provide a detail"
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <p class="content-p">f. Previous pregnancy?</p>
+              <!-- <p style="padding-left: 15px">
+                (number, normal/ C-section, home/ hospital, etc.)
+              </p> -->
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-yes-pregnancy"
+                    class="fourth-inp-checkbox with-input fourth-inp-checkbox-first"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-yes-pregnancy">Yes</label>
+                </div>
+
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-no-pregnancy"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-second"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-no-pregnancy">No</label>
+                </div>
+              </div>
+
+              <input
+                type="text"
+                class="fourth-inp-yes-pregnancy fourth-inp"
+                placeholder="number, normal/ C-section, home/ hospital, etc."
+                style="display: none"
+              />
+            </div>
+
+            <div class="inp-content">
+              <p class="content-p">g. Children?</p>
+              <!-- <p style="padding-left: 20px">(How many?)</p> -->
+
+              <div
+                class="inp-content"
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-yes-children"
+                    class="fourth-inp-checkbox with-input fourth-inp-checkbox-first"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-yes-children">Yes</label>
+                </div>
+
+                <div style="margin-right: 30px">
+                  <input
+                    type="checkbox"
+                    id="checkbox-no-children"
+                    class="fourth-inp-checkbox no-input fourth-inp-checkbox-second"
+                    style="margin-right: 10px"
+                  />
+                  <label for="checkbox-no-children">No</label>
+                </div>
+              </div>
+
+              <input
+                type="text"
+                class="fourth-inp-yes-children fourth-inp"
+                placeholder="How many?"
+                style="display: none"
+              />
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div>
+              <button class="btn-previous">Previous</button>
+              <button class="btn-clear">Clear</button>
+            </div>
+            <button class="btn-submit" id="btn-submit" type="submit">
+              Submit
+            </button>
+            <input type="file" id="fileInput" class="hidden-input" />
+          </div>
+        </form>
+        <!-- FOURTH FORM END ================================================================================================================= -->
+      </div>
+    </main>
+
+    <script>
+      const forms = document.querySelectorAll(".input-forms");
+
+      forms.forEach((form) => {
+        form.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            const formElements = Array.from(form.elements);
+            const currentIndex = formElements.indexOf(document.activeElement);
+
+            if (currentIndex !== -1 && formElements[currentIndex + 1]) {
+              e.preventDefault();
+              formElements[currentIndex + 1].focus();
+            }
+          }
+        });
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+        });
+      });
+    </script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+
+    <!-- <script
+      type="module"
+      src="./../js/Fill-Up-Firebase-Script.js"
+      defer
+    ></script> -->
+
+    <script src="./../js/Header-Script.js" defer></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"
+      defer
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+
+    <script
+      type="module"
+      src="./../js/Fill-Up-Generate-PDF-Script.js"
+      defer
+    ></script>
+    <script src="./../js/Fill-Up-Script.js" defer></script>
+  </body>
+</html>
