@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Header-Style.css" />
+    <link rel="stylesheet" href="./../css/Dashboard-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <section class="main-container">
+        <button class="btn-fill-up" onclick="btnHandleFillUp()">
+          Medical Records Form
+        </button>
+        <button
+          class="btn-clinical-services"
+          onclick="btnHandleClinicalServices()"
+        >
+          Clinical Services
+        </button>
+        <button class="btn-medical-records" onclick="btnHandleMedicalRecords()">
+          Request Medical Forms
+        </button>
+        <button class="btn-medical-files" onclick="btnHandleMedicalFiles()">
+          Files
+        </button>
+        <button class="btn-schedule" onclick="btnHandleSchedule()">
+          Schedule Consultation
+        </button>
+        <button class="btn-ar-health" onclick="btnHandleARHealth ()">
+          AR Health App
+        </button>
+      </section>
+    </main>
+
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">About</div>
+        <div class="modal-body" id="aboutContent">
+          <div class="about-section">
+            <h3>About Our Website</h3>
+            <p>
+              Our platform provides insights into monthly diseases, scheduling
+              consultations, submitting requests, and accessing medical files.
+            </p>
+          </div>
+          <div class="about-section">
+            <h3>About Our Mobile Application</h3>
+            <p>
+              The mobile app focuses on monthly diseases, offering remedies,
+              causes, images, and AR 3D animations for better understanding.
+            </p>
+          </div>
+          <div class="about-section">
+            <h3>About the Clinic</h3>
+            <p>
+              Dedicated to providing top-notch healthcare services, our clinic
+              aims to serve the community with excellence.
+            </p>
+          </div>
+          <div class="about-section developers">
+            <h3>Developers</h3>
+            <div class="developers-container">
+              <div class="developer">
+                <img src="./../media/images/me.jpg" alt="Developer 1" />
+                <p>Martin, Ray Emmanuel</p>
+              </div>
+              <div class="developer">
+                <img src="./../media/images/nat.jpg" alt="Developer 2" />
+                <p>Perez, John Nathaniel</p>
+              </div>
+              <div class="developer">
+                <img src="./../media/images/tiane.jpg" alt="Developer 3" />
+                <p>Tinerefe, Christiane Mark</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="close-btn" onclick="closeAboutModal()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        btnHandleLogout = () => {
+          window.location.href = "./Login.html";
+        };
+
+        btnHandleProfile = () => {
+          window.location.href = "./Profile.html";
+        };
+
+        btnHandleAbout = () => {
+          const modal = document.getElementById("aboutModal");
+          modal.style.display = "block";
+        };
+
+        closeAboutModal = () => {
+          const modal = document.getElementById("aboutModal");
+          modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+          const modal = document.getElementById("aboutModal");
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        };
+
+        btnHandleFillUp = () => {
+          window.location.href = "./Fill-Up.html";
+        };
+
+        btnHandleClinicalServices = () => {
+          window.location.href = "./Clinical-Services.html";
+        };
+
+        btnHandleMedicalRecords = () => {
+          window.location.href = "./Request-Form.html";
+        };
+
+        btnHandleMedicalFiles = () => {
+          window.location.href = "./Medical-Files.html";
+        };
+
+        btnHandleARHealth = () => {
+          window.location.href = "./AR-Health-App.html";
+        };
+
+        btnHandleSchedule = () => {
+          window.location.href = "./Schedule.html";
+        };
+      });
+    </script>
+
+    <script src="./../js/Header-Script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script src="./../js/Login-Actions-Script.js" type="module"></script>
+  </body>
+</html>

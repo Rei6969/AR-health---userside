@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Header-Style.css" />
+
+    <link rel="stylesheet" href="./../css/Medical-Files-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <button class="btn-back"></button>
+      <div class="container">
+        <section class="requests-container">
+          <h1 class="requests-h1">Request Files</h1>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <th class="col-type">Request Type</th>
+                <th class="col-filename">Filename</th>
+                <th class="col-actions">Actions</th>
+              </thead>
+
+              <tbody class="requests-tbody">
+                <!-- <tr>
+                  <td>Medical Record</td>
+                  <td>a.pdf</td>
+                  <td>
+                    <button class="btn-download">Download</button>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/Header-Script.js" defer></script>
+    <script type="module" src="./../js/Files-Script.js" defer></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".btn-back").addEventListener("click", () => {
+          window.location.href = "./Dashboard.html";
+        });
+      });
+    </script>
+  </body>
+</html>
