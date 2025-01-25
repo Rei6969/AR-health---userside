@@ -18,7 +18,7 @@ header img {
 }
 
 header h1 {
-  color: var(--color-font-3);
+  color: var(--color-font-4);
   text-align: center;
 }
 
@@ -30,7 +30,7 @@ header h1 {
 }
 
 .nav-container a {
-  color: var(--color-font-3);
+  color: var(--color-font-4);
   margin: 0 10px;
 }
 
@@ -105,18 +105,19 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-sub-bg-1);
-  color: #fff;
+  background-color: var(--color-btn-main-3);
+  color: #000;
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
   font-size: 1.5rem;
   width: 180px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .explore-container button:hover {
-  background-color: var(--color-btn-hover-1);
+  background-color: var(--color-btn-hover-4);
 }
 
 .explore-container button img {
