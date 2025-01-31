@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+
+    <link rel="stylesheet" href="./../css/Landing-Page-Style.css" />
+  </head>
+
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+      </div>
+
+      <div class="container">
+        <section class="login-cta-container">
+          <h1 class="welcome">
+            Welcome to LSPU Clinic
+            <img src="./../logo.png" alt="logo" class="logo-img" />
+          </h1>
+          <h1 style="color: #fff">
+            To Access and request medical records, Please:
+          </h1>
+
+          <div class="cta-action">
+            <button class="btn-login">Sign in</button>
+            <h3 style="color: #fff">or</h3>
+            <button class="btn-sign-up">Sign up</button>
+          </div>
+        </section>
+
+        <section class="download-cta-container">
+          <h1>
+            To learn more about the monthly diseases, you can download our
+            mobile application named AR Health
+          </h1>
+          <a href="./AR-Health-App.html" class="btn-download-app"
+            >Download APP</a
+          >
+        </section>
+
+        <section class="disease-card-container"></section>
+
+        <div class="container-overlay">
+          <img alt="" id="overlay-img" />
+        </div>
+
+        <div class="description-symptoms-container">
+          <button class="close-container">&#x2715;</button>
+          <div>
+            <!-- <div class="title-card"></div> -->
+            <div class="symptoms-card">
+              <h1 class="title-content"></h1>
+
+              <h1 class="h1">Symptoms:</h1>
+              <ul class="symptoms-content"></ul>
+
+              <h1 class="h1">Other Info.:</h1>
+              <p class="other-info"></p>
+            </div>
+
+            <div class="preview-container">
+              <div class="preview-images">
+                <img
+                  src="./../media/app/ss/test1.png"
+                  onclick="openModal(this)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="description-card">
+            <h1>Description:</h1>
+            <p class="description-content"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function openModal(img) {
+        document.getElementById("imageModal").style.display = "flex";
+        document.getElementById("modalImage").src = img.src;
+      }
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+    </script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"
+      type="module"
+    ></script>
+
+    <!-- <script src="./../js/Header-Script.js"></script> -->
+    <script type="module" src="./../js/Landing-Page-Script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Header-Style.css" />
+
+    <link rel="stylesheet" href="./../css/AR-Health-App-Style.css" />
+  </head>
+  <body>
+    <header id="header-container"></header>
+
+    <main>
+      <button class="btn-back"></button>
+
+      <img
+        src="./../media/CLINIC LOGO/logo.png"
+        alt="App Logo"
+        class="app-logo"
+      />
+      <h1 class="app-name">AR Health</h1>
+      <!-- <button class="download-btn" onclick="downloadApp()">Download Now</button> -->
+
+      <div class="button" data-tooltip="Size: 20Mb" onclick="downloadApp()">
+        <div class="button-wrapper">
+          <div class="text">Download Now</div>
+          <span class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="2em"
+              height="2em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <section>
+        <img
+          src="./../media/app/ss/test1.png"
+          alt="Preview"
+          id="large-preview"
+          class="large-preview"
+        />
+        <div class="preview-images">
+          <img
+            src="./../media/app/ss/test1.png"
+            alt="Preview 1"
+            onclick="setLargePreview(this)"
+          />
+          <img
+            src="./../media/app/ss/test2.png"
+            alt="Preview 2"
+            onclick="setLargePreview(this)"
+          />
+          <img
+            src="./../media/app/ss/test1.png"
+            alt="Preview 3"
+            onclick="setLargePreview(this)"
+          />
+          <img
+            src="./../media/app/ss/test1.png"
+            alt="Preview 3"
+            onclick="setLargePreview(this)"
+          />
+          <img
+            src="./../media/app/ss/test1.png"
+            alt="Preview 3"
+            onclick="setLargePreview(this)"
+          />
+          <img
+            src="./../media/app/ss/test1.png"
+            alt="Preview 3"
+            onclick="setLargePreview(this)"
+          />
+          <img
+            src="./../media/app/ss/test1.png"
+            alt="Preview 3"
+            onclick="setLargePreview(this)"
+          />
+          <img
+            src="./../media/app/ss/test1.png"
+            alt="Preview 3"
+            onclick="setLargePreview(this)"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2>Description</h2>
+        <p class="description">
+          AR Health is a cutting-edge application that provides innovative
+          health monitoring and management solutions. Using augmented reality,
+          the app allows users to visualize health data in real-time and make
+          informed decisions about their well-being. Download AR Health now and
+          experience the future of health management.
+        </p>
+      </section>
+    </main>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script>
+      document.addEventListener("headerLoaded", () => {
+        const btnMenu = document.querySelector(".menu-toggle-container");
+
+        btnMenu.style.pointerEvents = "none";
+        btnMenu.style.opacity = 0;
+      });
+
+      function downloadApp() {
+        // window.location.href = "./../downloads/ARHealth.apk";
+        window.location.href = "./../media/app/test.apk";
+      }
+
+      function setLargePreview(image) {
+        const largePreview = document.getElementById("large-preview");
+        largePreview.src = image.src;
+        largePreview.alt = image.alt;
+      }
+    </script>
+
+    <script src="./../js/Header-Script.js" defer></script>
+    <script type="module" src="./../js/AR-Health-Script.js" defer></script>
+  </body>
+</html>

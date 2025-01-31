@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSPU Clinic</title>
+    <link rel="shortcut icon" href="./../logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../css/Root-Style.css" />
+    <link rel="stylesheet" href="./../css/Login-Style.css" />
+  </head>
+  <body>
+    <div id="background1" class="backgroundImage show"></div>
+    <div id="background2" class="backgroundImage"></div>
+
+    <main class="container">
+      <h1>Laguna State Polytechnic University Clinic</h1>
+
+      <div class="login-container">
+        <div class="alert-container">
+          <h4 id="error-message">
+            Email and/or password is incorrect,
+            <br />please check and try again.
+          </h4>
+
+          <div class="btn-close">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <form id="login-form" action="#">
+          <input
+            type="email"
+            class="inp-field"
+            id="login-inp-email"
+            placeholder="Enter your email"
+            required
+          />
+          <!-- <input
+            type="password"
+            class="inp-field"
+            id="login-inp-password"
+            placeholder="Enter your password"
+            required
+          /> -->
+          <div class="password-container">
+            <input
+              type="password"
+              class="inp-field"
+              id="login-inp-password"
+              placeholder="Enter your password"
+              required
+            />
+            <button
+              type="button"
+              class="toggle-password"
+              onclick="togglePassword()"
+            >
+              👁️
+            </button>
+          </div>
+        </form>
+
+        <div class="login-middle-container">
+          <div style="opacity: 0">
+            <input
+              type="checkbox"
+              name="remember-me"
+              id="login-inp-remember-me"
+            />
+            <label for="login-inp-remember-me">Remember me</label>
+          </div>
+          <a href="#" class="forgot-password">Forgot Password</a>
+        </div>
+
+        <button
+          type="submit"
+          class="btn-login"
+          id="btn-login"
+          form="login-form"
+        >
+          Sign in
+        </button>
+
+        <div style="display: none; flex-direction: row; align-items: center">
+          <hr style="margin: 10px; border: 1px solid #919191; width: 100%" />
+          <p>or</p>
+          <hr style="margin: 10px; border: 1px solid #919191; width: 100%" />
+        </div>
+
+        <button
+          type="button"
+          class="btn-google"
+          id="btn-google"
+          style="display: none"
+        >
+          Continue with Google
+        </button>
+
+        <div class="signup-prompt">
+          <p>Don't have an account?</p>
+          <a href="./Signup.html" class="btn-nav-to-sign-up"
+            >Create an account</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function togglePassword() {
+        const passwordInput = document.getElementById("login-inp-password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      }
+    </script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/BG-Script.js" defer></script>
+    <script src="./../js/Login-Firebase-Script.js" type="module"></script>
+  </body>
+</html>
